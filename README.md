@@ -27,13 +27,13 @@ pip3 install -r requirements.txt
 
 ## Generating a config
 
-*Help menu:*
+**Help menu:**
 
 ```
 python3 gen_grafana_config.py -h
 ```
 
-*Output:*
+**Output:**
 
 ```
 usage: gen_grafana_config.py [-h] instrumentID dashboardID
@@ -48,15 +48,15 @@ optional arguments:
   -h, --help    show this help message and exit
 ```
 
-The `instrumentID` is assigned in the CHORDS portal (http://3d.chordsrt.com/instruments). The `dashboardID` is assigned in Grafana automatically when a new dashboard is created, and can be found by viewing the dashboard JSON config.
+The `instrumentID` is assigned in the [CHORDS portal](http://3d.chordsrt.com/instruments). The `dashboardID` is assigned in Grafana automatically when a new dashboard is created, and can be found by viewing the dashboard JSON config.
 
-*Example:*
+**Example:**
 
 ```
 python3 gen_grafana_config.py 94 0YAdYui4z
 ```
 
-*Output:*
+**Output:**
 
 ```
 Wrote Grafana config to NDSU_03_grafana_config.json
