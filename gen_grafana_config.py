@@ -19,6 +19,8 @@ df = tables[1].query(f'InstrumentId == {instr_id}')
 
 station_name = df.InstrumentName.iloc[1]
 
+print(f'Found station \'{station_name}\' in CHORDS!')
+
 with open('grafana_template.j2') as f:
     content = Template(f.read()).render(
         dashboard_id = dashboard_id,
